@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Contact Page</title>    <!-------title will be displayed in the brower's title bar----->
+		<meta name="description" content="Contact Page of website">   <!----metadata will not be displayed in the page but the will be machine parsable----->
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Dipika Bogati">
+		<link rel="stylesheet" type="text/css" href="../css/Contact.css">  <!---links to the css of another folder--->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!--- links for the social media icon in the footer--->
+<script> // for java script 
+	function validateForm() {  //method for form validation
+		var fname = document.forms["messageForm"]["firstname"].value;  //for first name
+		var lname = document.forms["messageForm"]["lastname"].value;  //for last name
+		var gender = document.forms["messageForm"]["gender"].value; //for gender
+		var message = document.forms["messageForm"]["message"].value; //for message box
+
+		if (fname == "" || lname == "" || message == ""){
+			alert("Empty fields found. Please fill the form."); //if field is left empty
+		}
+		else {
+			alert("Thank you for the feedback."); //after entering all value
+		}
+		}
+</script>
+</head>
+<body>
+<section>
+<div id="wrapper">
+	<header><!------starting of the page---->
+		<h1>Thankyou for your visit!!</h1>
+	</header>
+	<nav> <!----tag for navigation bar---->
+		<ul class="main_menu">
+			<li><a href="../Home.html">home</a></li> <!--links to home page-->
+			<li><a href="../pages/CV.html">cv</a></li><!------This directs to cv page-->
+			<li><a href="../pages/Blog.html">blog</a></li><!------This directs to blog page-->
+			<li><a href="../pages/Research.html">research</a></li><!------This directs to research page-->
+			<li><a class=active href="../pages/Contact.html">contact</a></li><!------This directs to contact page-->
+		</ul>
+	</nav>
+</div>
+<main>
+<div id="MyClock" class="clock"></div> <!---for making clock-->
+<script type="text/javascript"> //tags for java script
+	function showTime(){
+		var date =new Date();  //declaration of variable date
+		var h =date.getHours(); //declaration of variable h
+		var m=date.getMinutes(); //declaration of variable m
+		var s=date.getSeconds(); //declaration of variable s
+		var session="AM"; //declaration of variable session
+
+		if(h==0){
+			h=12;
+		}
+		if (h>12){
+			h=h-12;
+			session="PM";
+		}
+		h=(h<10)? "0"+h:h;
+		m=(m<10)? "0"+m:m;
+		s=(s<10)? "0"+s:s;			
+
+		var time=h + ":" + m + ":" + s + "" + session;
+		document.getElementById("MyClock").innerText=time;  //to get time from laptop
+		document.getElementById("MyClock").textContent=time;
+		setTimeout(showTime,1000); //to show the time
+		}
+		showTime()
+</script>
+<span style="color:#fff;font-weight:bold"> <!--this is example of inline css -->
+	<form name="messageForm" onsubmit="validateForm()"> <!---for form -->
+		<p>First name: <input type="text" name="firstname" placeholder="fname"></p>
+		<p>Last name: <input type="text" name="lastname" placeholder="lname"></p>
+		<p>Gender: <input type="radio" name="gender" value="male" checked> Male
+		<input type="radio" name="gender" value="female"> Female </p> <!---male is checked by default-->
+		<p>Message: <br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+		<p><input type="submit" value="Send"></p>
+	</form>
+</span>
+</main>
+</section>
+<footer>  <!--- for the footer of the page--->
+	<p>Copyright &copy; 2019 All Rights Reserved<br/>|| Islington college ||</p>
+	<div class="s-m"  align="center"> <!----for the instagram and facebook icon at the end of the page--->
+		<a href="https://www.facebook.com/profile.php?id=100009467649267"><i class="fab fa-facebook-f"></i></a>  <!----links for facebook icon---->
+		<a href="https://www.instagram.com/__dipika____/"><i class="fab fa-instagram"></i></a><!----links for instagram icon---->
+	</div>
+</footer>
+</body>
+</html>

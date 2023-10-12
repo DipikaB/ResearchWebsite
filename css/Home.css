@@ -1,0 +1,201 @@
+/*....This is the example of the external css....*/
+
+
+#wrapper{  /*first division created in page */
+	max-width:660px;
+	margin:0 auto;
+	background-color:#fff;
+	padding:22px;
+}
+
+header{ /* for the header inside the wrapper */
+	background-color:#000; 
+	height:80px;
+	padding:4px;
+}
+
+header h1{ /* for the text inside the header */
+	text-align: center;
+	color:#fff;
+	line-height: 50px;
+}
+
+.main_menu{ /* this is for navigation bar */
+	padding:5px 0 5px 0; /*padding top, right, bottom, left */
+	text-align: center;
+	line-height: 32px;
+	background-color: #000;
+}
+
+ul.main_menu{
+	margin-top:15px;
+}
+
+.main_menu li {
+	display:inline;
+	padding:0 10px 0 10px;
+	font-size:20px;
+}
+
+.main_menu a{ /* for the 5 pages name given in navigation bar */
+	text-decoration:none;
+	color: #fff;
+	padding:8px;
+	font-variant:small-caps;
+}
+
+.main_menu a:hover{ /* gives grey color when hover */
+	color: #808080;
+}
+
+nav a.active{ /* gives grey color when the particular page is opened */
+	background-color: #A9A9A9;
+}
+
+.circle{  /* for the circle that links to CV page */
+	background-color:#fff;
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	top:50%;
+	left:10%;
+	position: fixed;
+	box-shadow: 0 0 10px #000;
+}
+
+.circle:hover{
+	background-color:#808080;
+}
+
+.content a{ /*for the contents inside the CV circle */
+	width:inherit;
+	height:auto;
+	top:13%;
+	text-align:center;
+	font-family: Arial;
+	color:#000;
+	font-style:italic;
+	position:absolute;
+	text-decoration: initial;
+}
+
+.circle1{ /* for the circle that links to the Blog page */
+	background-color:#fff;
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	top:50%;
+	left:33%;
+	position:fixed;
+	box-shadow: 0 0 10px #000;
+}
+
+.circle1:hover{
+	background-color:#808080;
+}
+
+.content1 a{ /* for the contents inside the Blog page */
+	position:absolute;
+	width:inherit;
+	height:auto;
+	top:13%;
+	text-align:center;
+	font-family: Arial;
+	color:#000;
+	font-style:italic;
+	text-decoration: initial;
+}
+
+.circle2{ /* for the circle that links to the Research page */
+	background-color:#fff;
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	top:50%;
+	left:55%;
+	position:fixed;
+	box-shadow: 0 0 10px #000;
+}
+
+.circle2:hover{
+	background:#808080;
+}
+
+.content2 a{ /* for the contents inside the Research circle */
+	position:absolute;
+	width:inherit;
+	height:auto;
+	top:13%;
+	text-align:center;
+	font-family: Arial;
+	color:#000;
+	font-style:italic;
+	text-decoration: initial;
+}
+
+.circle3{ /* forr the circle that links to the Contact page */
+	position: fixed;
+	background-color:#fff;
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	top:50%;
+	left:80%;
+	box-shadow: 0 0 10px #000;
+}
+
+.circle3:hover{
+	background:#808080;
+}
+
+.content3 a{ /* for the contents inside the Contact circle */
+	position:absolute;
+	width:inherit;
+	height:auto;
+	top:13%;
+	text-align:center;
+	font-family: Arial;
+	color:#000;
+	font-style:italic;
+	text-decoration: initial;
+}
+
+main{ /* division between navigation bar and footer*/
+	width:90%;
+	margin:0 auto;
+	padding:30px 20px;
+	min-height:calc(100vh - 150px - 150px);
+}
+
+/*-------footer------*/
+footer{
+	background-color:#000; /* black color for footer */
+	height:150px; /* height of the footer */
+	padding:20px; 
+}
+
+footer p{
+	text-align: center; /* text are aligned at the center */
+	color: #fff; /* color of the text */
+}
+
+footer div a{   /*this is for icons of facebook and instagarm */
+	display: inline-flex;
+	width:40px; 
+	height:40px;
+	background:#808080;
+	color: white;
+	margin:0 6px;
+	border-radius:50%;
+	justify-content:center;
+	align-items:center;
+	font-size:22px;
+}
+
+footer div a:hover{
+	background: #A9A9A9; /* gives grey color when hover */
+}
+
+footer div a:hover> i{
+	transform: scale(1.6) rotate(25deg);  /* rotate the icons */
+}

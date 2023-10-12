@@ -1,0 +1,121 @@
+/*....This is the example of the external css....*/
+#wrapper{  /* first division created in page for header and navigation bar */
+	max-width:660px;
+	margin:0 auto;  /* margin would increase with increase in text of the body */
+	background-color:#fff; /* color of wrapper is white */
+	padding:22px; /*spaces around wrapper */
+}
+
+header{ /* for the header inside the wrapper */ 
+	background-color:#000; /* color of the header is black */
+	height:80px; /* height of the header */
+	padding:4px; /* spaces around the header from wrapper */
+}
+
+header h1{ /* for the text inside the wrapper */
+	text-align: center; /* header is kept at the center */
+	color:#fff; /* text is white */
+	line-height: 50px; /*height of the text */
+}
+
+.main_menu{ /* this is for navigation bar */
+	padding:5px 0 5px 0; 
+	text-align: center; /* navigation menu are alligned at center */
+	line-height: 32px;
+	background-color: #000;  /* color of nav is white */	
+}
+
+ul.main_menu{ /* listing of navigation */
+	margin-top:15px;
+}
+
+.main_menu li { /*list of 5 pages of navigation */
+	display:inline;
+	padding:0 10px 0 10px;
+	font-size:20px;
+}
+
+.main_menu a{  /* for the 5 pages name given in navigation bar */
+	text-decoration:none;
+	color: #fff;
+	padding:8px;
+	font-variant:small-caps;
+}
+
+.main_menu a:hover{   /* gives grey color when hover */
+	color: #808080;
+}
+
+nav a.active{  /* gives grey color when the particular page is opened */
+	background-color: #A9A9A9;
+}
+
+.rectangle{ /* for the container below the picture */
+	background-color:#0009;
+	width:1350px; /*width of the container */
+	height:650px; /* height of the container */
+	top:15%;
+	left:50%; 
+	box-shadow: 0 0 10px #000;
+}
+
+.content4{ /* for the test field inside the container */
+	width:inherit;
+	height:auto;
+	top:25%;
+	margin:2px;
+	text-align:center;
+	font-family:Arial;
+	color:#fff;
+	font-size: 110%;
+}
+
+.circle4{ /* for the picture */
+	background-image:url("../images/d.jpg");
+	width:300px;
+	height:300px;
+	border-radius:300px; /* for making circle */
+	top:25%;
+	left:35%;
+	box-shadow: 0 0 10px #000; /* making box at the border */
+}
+
+main{  /* division between navigation bar and footer*/
+	width:90%;
+	margin:0 auto;
+	padding:30px 20px;
+	min-height:calc(100vh - 150px - 150px);
+}
+/*-----footer----*/
+footer{
+	background-color:#000; /* black color for footer */
+	height:150px; /* height of the footer */
+	padding:20px;
+}
+
+footer p{
+	text-align: center; /* text are aligned at the center */
+	color: #fff; /* color of the text */
+}
+
+footer div a{  /*this is for icons of facebook and instagarm */
+	display: inline-flex;
+	width:40px; /* width of the icon */ 
+	height:40px; /*height of the icon */
+	background:#808080; /*grey color of icon */
+	color: white;
+	margin:0 6px;
+	border-radius:50%; /* for making circle of icons */
+	justify-content:center; /* icon is justified in the center */
+	align-items:center;
+	transition:0.4s all;
+	font-size:22px;
+}
+
+footer div a:hover{
+	background: #808080;  /* gives grey color when hover */
+}
+
+footer div a:hover> i{
+	transform: scale(1.6) rotate(25deg);    /* rotate the icons */
+}

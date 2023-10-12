@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home Page</title>    <!-------title will be displayed in the brower's title bar----->
+		<meta name="description" content="Home Page of website">   <!----metadata will not be displayed in the page but will be machine parsable----->
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Dipika Bogati">
+		<link rel="stylesheet" type="text/css" href="css/Home.css"> <!----link to external css file--->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>  /*this is the example of the internal css or internal style sheet*/
+	body{
+		font-family:'Arial', 'sans-serif'; /*  font style of words inside the body tag  */
+		background-image: url("images/n.jpg");  /* background image given to the whole body */
+		background-size:cover;  /* prevents from the repetation of the pictures */
+		background-position:center;  
+		margin:0;
+	}
+</style>
+</head>
+<body>
+<section>
+<div id="wrapper">
+	<header><!------heading of the page---->
+		<h1>Welcome to my page!</h1>
+	</header>
+	<nav> <!----tag for navigation bar---->
+		<ul class="main_menu">
+			<li><a class=active href="Home.html">home</a></li>
+			<li><a href="pages/CV.html">cv</a></li><!------This directs to cv page-->
+			<li><a href="pages/Blog.html">blog</a></li><!------This directs to blog page-->
+			<li><a href="pages/Research.html">research</a></li><!------This directs to research page-->
+			<li><a href="pages/Contact.html">contact</a></li><!------This directs to contact page-->
+		</ul>
+	</nav>
+</div>
+<main> <!------another division in the page after the navigation bar---->
+<div class="circle">
+	<div class="content"><a href="pages/CV.html"> <!----links to CV page---->
+		<h1><strong>CV</strong></h1>
+		<p>Description about the website designer</p></a>
+	</div>
+</div>
+<div class="circle1">
+	<div class="content1"><a href="pages/Blog.html"><!----links to Blog page---->
+		<h1><strong>Blog</strong></h1>
+		<p><i>Description of the internet</i></p></a>
+	</div>
+</div>
+<div class="circle2">
+	<div class="content2"><a href="pages/Research.html"><!----links to research page---->
+		<h1><strong>Research</strong></h1>
+		<p>Research on these websites</p></a>
+	</div>
+</div>
+<div class="circle3">
+	<div class="content3"><a href="pages/Contact.html"><!----links to contact page---->
+		<h1><strong>Contact</strong></h1>
+		<p>Contact and feedback of the reader</p></a>
+	</div>
+</div>
+</main>
+</section>
+<footer>
+	<p>Copyright &copy; 2019 All Rights Reserved<br/>|| Islington college ||</p>
+	<div class="s-m"  align="center">
+		<a href="https://www.facebook.com/profile.php?id=100009467649267"><i class="fab fa-facebook-f"></i></a>  <!----links for facebook icon---->
+		<a href="https://www.instagram.com/__dipika____/"><i class="fab fa-instagram"></i></a><!----links for instagram icon---->
+	</div>
+</footer>
+</body>
+</html>

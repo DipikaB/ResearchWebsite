@@ -1,0 +1,114 @@
+/*....This is the example of the external css....*/
+body{
+	font-family:'Arial', sans-serif;  /* font style of the words inside the body tag*/
+	background-image: url("../images/n.jpg");  /* links to the background image */
+	background-size:cover;    /*prevents from the repetation of the pictures */
+	background-position:center;
+	margin:0;
+}
+
+#wrapper{ /* first division created in page for header and navigation bar */
+	max-width:660px;
+	margin:0 auto;  /* margin would increase with increase in text of the body */
+	background-color:#fff;  /* color of wrapper is white */
+	padding:22px; /*spaces around wrapper */
+}
+
+header{  /* for the header inside the wrapper */ 
+	background-color:#000; /* color of the header is black */
+	height:80px;  /* height of the header */
+	padding:4px;  /* spaces around the header from wrapper */
+}
+
+header h1{  /* for the text inside the wrapper */
+	text-align: center;  /* header is kept at the center */
+	color:#fff;  /* text is white */
+	line-height: 50px;  /*height of the text */
+}
+
+.main_menu{  /* this is for navigation bar */
+	padding:5px 0 5px 0;
+	text-align: center;  /* navigation menu are alligned at center */
+	line-height: 32px;
+	background-color: #000;   /* color of nav is white */	
+}
+
+ul.main_menu{  /* listing of navigation */
+	margin-top:15px;
+}
+
+.main_menu li {  /*list of 5 pages of navigation */
+	display:inline;
+	padding:0 10px 0 10px;
+	font-size:20px;
+}
+
+.main_menu a{  /* for the 5 pages name given in navigation bar */
+	text-decoration:none;
+	color: #fff;
+	padding:8px;
+	font-variant:small-caps;
+}
+
+.main_menu a:hover{  /* gives grey color when hover */
+	color: #808080;
+}
+
+nav a.active{  /* gives grey color when the particular page is opened */
+	background-color: #A9A9A9;
+}
+
+
+main{  /* division between navigation bar and footer*/
+	width:50%;
+	margin-left:40%;
+	padding:30px 20px;
+	min-height:calc(100vh - 150px - 150px);
+}
+/*-----footer----*/
+footer{
+	background-color:#000;  /* black color for footer */
+	height:150px;  /* height of the footer */
+	padding:20px;
+}
+
+footer p{
+	text-align: center;  /* text are aligned at the center */
+	color: #fff;  /* color of the text */
+}
+
+footer div a{  /*this is for icons of facebook and instagarm */
+	display: inline-flex;
+	width:40px;  /* width of the icon */ 
+	height:40px;  /*height of the icon */
+	background:#808080;  /*grey color of icon */
+	color: white;
+	margin:0 6px;
+	border-radius:50%;  /* for making circle of icons */
+	justify-content:center;  /* icon is justified in the center */
+	align-items:center;
+	transition:0.4s all;
+	font-size:22px;
+}
+
+footer div a:hover{
+	background: #808080;  /* gives grey color when hover */
+}
+
+footer div a:hover> i{
+	transform: scale(1.6) rotate(25deg);  /* rotate the icons */
+}
+
+.clock{  /* for the clock*/
+	background-color: black; /* background color of clock*/
+	color: white; /* color above black */
+	position: absolute;
+	top: 50%; /* for position of clock */
+	left: 40%; /*for position of clock */
+	transform: translate(260%,130%);
+	font-size: 40px;
+	border:3px solid #ccc; /* for border of the clock */
+	padding: 2px 10px 2px 10px	
+}
+
+

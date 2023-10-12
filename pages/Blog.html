@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Blog Page</title>    <!-------title will be displayed in the brower's title bar----->
+		<meta name="description" content="Blog Page of website">   <!----metadata will not be displayed in the page but the will be machine parsable----->
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Dipika Bogati">
+		<link rel="stylesheet" type="text/css" href="../css/Blog.css"> <!---links to the css of another folder--->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--- links for the social media icon in the footer--->
+<style> /* this is the example of internal css */
+    #slideimage{
+      width:50%; /* width of image */
+      height:500px; /*height of the image */
+      margin-left: 25%;
+    }
+</style>
+</head>
+<body>
+<section>
+<div id="wrapper">
+	<header><!------starting of the page---->
+		<h1>Technology</h1>
+	</header>
+	<nav> <!----tag for navigation bar---->
+		<ul class="main_menu">
+			<li><a href="../Home.html">home</a></li>
+			<li><a href="CV.html">cv</a></li><!------This directs to cv page-->
+			<li><a class=active href="Blog.html">blog</a></li><!------This directs to blog page-->
+			<li><a href="Research.html">research</a></li><!------This directs to research page-->
+			<li><a href="Contact.html">contact</a></li><!------This directs to contact page-->
+		</ul>
+	</nav>
+</div>
+<main> <!--- division between the naviagtion and footer-->
+<div>
+	<img src="../images/g.jpg" alt="../images/g.jpg" id="slideimage"></div> <!---image in blog-->
+	<div class="rectangle"> <!--- division for the container to write something---> 
+		<div class="content4"><br/> <!--- the content present in  between the above container--->
+			<h2><b>How technology has affected in the daily lives</b></h2> <!---starting of the blog--->
+			<p align="justify"> <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's not that we use technology, We live technology.<span style="color:#808080;font-weight:bold"> Technology is a useful servant but a dangerous master.</span> It is known that 3.2 billion people are internet users in world or almost half of the world's population use internet technology. So, we can say that the technology has become the friend of the human. Technology connects the world if used wisely but same blessings can turn into burden if misused. The world is getting smaller and thanks to technology. Actually, technology is knowledge or set of tools that helps to make things easier or resolve problems. So, technology has directly or indirectly affected the daily life style of the people. Nowadays, technology is changing our lives in every second. For example: in the past, we were not able to get data, information and knowledge so quickly with flexibility. But today because of technology there are online schools. Anyone can do online degrees by using the internet and computers. This of the latest example how life has become easier due to the use of the technology. Technology is like a fish, the longer it stays on the shelf the less desireable it becomes.<br/></p>
+			<h2><b>Positive aspects of the technology</b></h2>
+			<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We invented and developed the technologies to change our life to its best. Nowadays, world runs by the technology like in business, artificial intelligence, cloud computing, machine learning, predictive analytics and many more. So, invention and development of technology have changed our life positively. Business without technology is impossible. The positive aspects of the technology are listed below:
+			<ul>  <!--- for listing advantages -->
+				<li align="left">Technology has changed education in terms of online schools,online degrees and online education.</li>
+				<li align="left">Technology has changed the ways of communication like letters are replaced by the email, banking servies are all included in hand- held mobile. </li>
+				<li align="left">The main influencing factor of the technology is youth. Those who use internet wisely are running business online, some are getting job in the technology field and many more.</li>
+				<li align="left">Research has been easier. The world fit in the small pages of the google.</li>
+				<li align="left">With the help of the technology, there is faster business transactions and greater possibility to earn.</li>
+				<li align="justify"> In this way, technology changed the lifestyle of the people as Technology has upgraded human greed.</li></p> 
+			</ul>
+				<h2><b>Negative aspects of the technology</b></h2>
+				<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although there are many blessings in the technology, misuse of the technology become curse in the today world. Currently, there are many ways that our society misuses technology. The use of technology that is excessive or problematic is the technology misuse. The negative aspects of the technology are listed below:
+			<ul> <!--- for lsting disadvantages --->
+				<li align="left">Children, young adults and even adults are getting addicted to games and technology.</li>
+				<li align="left">Technology connects the people but still became the barrier of communication.</li>
+				<li align="left">Criminal events is increasing due to the misuse of the technology.</li>
+				<li align="left">Hackers or attackers can be the burdern for the business and for the governmental act.</li>
+				<li align="left">It has negative impact on youth mainly in social media. As they are the victim of the addiction of the social media.</li>
+			</ul>
+				</p>
+				<h2><b>Conclusion</b></h2>
+				<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hence, considering the positive and negative ascpects of the technology, the managed technology is man's overall benefit because we cannot imagine the today's world without technology. Working on the negative aspects and making people aware of the positive aspects of the technology, we can see the development of the world within few decade. Looking few years back, there was not that much use of technology as it is using now.Due to the wide use of the technology, we can see the progress in different fields also. Many important technologies have enormous future potential. So, the youth should be encouraged to use the technology to increase their skills and knowledge and most importantly, the misuse of the technology should be totally removed from the world.
+				</p>
+				</i>
+		</div>
+	</div>	
+</main>
+</section>
+<script>
+    var images=["../images/f.jpg", //number of images to get slide.
+                "../images/g.jpg",
+                "../images/h.jpg",
+                "../images/i.jpg",
+                "../images/j.jpg"
+                                 ];
+    var i=0;  //1
+function slides(){
+document.getElementById("slideimage").src=images[i];
+if(i<(images.length-1))  //4<4
+i++;
+else
+i=0;
+}
+setInterval(slides,2000)
+</script>
+<footer> <!--- for the footer of the page--->
+	<p>Copyright &copy; 2019 All Rights Reserved<br/>|| Islington college ||</p>
+	<div class="s-m"  align="center">  <!----for the instagram and facebook icon at the end of the page--->
+	<a href="https://www.facebook.com/profile.php?id=100009467649267"><i class="fab fa-facebook-f"></i></a>  <!----links for facebook icon---->
+	<a href="https://www.instagram.com/__dipika____/"><i class="fab fa-instagram"></i></a><!----links for instagram icon---->
+	</div>
+</footer>
+</body>
+</html>
